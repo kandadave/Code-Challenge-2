@@ -1,0 +1,333 @@
+/* Import Google Font - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+    /* Color Palette */
+    --primary-blue: #007bff;
+    --primary-blue-dark: #0056b3;
+    --success-green: #28a745;
+    --success-green-dark: #218838;
+    --danger-red: #dc3545;
+    --danger-red-dark: #c82333;
+    --info-cyan: #17a2b8;
+    --info-cyan-dark: #138496;
+    --warning-yellow: #ffc107;
+    --warning-yellow-dark: #e0a800;
+
+    --bg-light: #f0f2f5;
+    --bg-white: #ffffff;
+    --text-dark: #2c3e50;
+    --text-medium: #555;
+    --text-light: #777;
+
+    /* Shadows */
+    --shadow-light: rgba(0, 0, 0, 0.08);
+    --shadow-medium: rgba(0, 0, 0, 0.15);
+    --shadow-strong: rgba(0, 0, 0, 0.25);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #f0f2f5 0%, #e0e6ed 100%);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;/* Include padding in the element's total width and height*/
+}
+
+h1 {
+    color: var(--text-dark);
+    margin-bottom: 35px;
+    font-size: 2.8em;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0, 0.1);
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    color: var(--text-dark);
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--primary-blue); /*Stronger border for headings*/
+    padding-bottom: 8px;
+    font-size: 1.8em;
+    font-weight: 600;
+}   
+
+.body {
+    background-color: var(--bg-white);
+    padding: 35px;
+    border-radius: 15px; /*More rounded corners*/
+    box-shadow: 0 10px 30px var(--shadow-medium); /*Deeper shadow */
+    width: 100%;
+    max-width: 650px; /* Slightly wider*/
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-out;
+}
+
+.body:hover {
+    transform: translateY(-5px);/* Lift effect on hover */
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    gap: 18px; /* More space between form groups */
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 10px;
+    font-weight: 600;
+    color: var(--text-medium);
+    font-size: 1.1em;
+}
+
+input[type="text"],
+select{
+    padding: 14px;
+    border:2px solid #ddd;
+    border-radius: 10px; /*More rounded input fields */
+    font-size: 1.1em;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+input[type="text"]:focus,
+select:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.25)/*Focus ring effect*/
+}
+
+button{
+    padding: 14px 30px;
+    background-image: linear-gradient(45deg, var(--primary-blue),#00aaff); /*Gradient button*/
+    color:white;
+    border: none;
+    border-radius: 10px;/*More rounded buttons*/
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);/*Button shadow*/
+    position: relative;
+    overflow: hidden; /*For pseudo-element effects */
+}
+
+button:hover{
+    background-image: linear-gradient(45deg,#0056b3,#0088cc);/*Darker gradient on hover */
+    transform: translateY(-3px) scale(1.02);/*More pronounced lift*/
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+}
+
+
+button:active {
+    transform: translateY(0);/*Press down effect*/
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Ripple effect on buttons(in conjuction with JS*/
+button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease-out, height 0.4s ease-out, opacity 0.4s ease-out;
+}
+button:active::before {
+    width: 200%;
+    height: 200%;
+    opacity: 1;
+}
+
+.summary-section{
+    margin-top: 30px;
+    border-top: 2px solid #eee;
+    padding-top: 25px;
+    background-color: #fcfdff;/*Lighter background for summary*/
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.08);/*Inner shadow*/
+}
+
+#guest-summary p{
+    margin: 8px 0;
+    font-size: 1.2em;
+    color: var(--text-dark);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #e0e0e0;
+}
+
+#guest-summary p:last-child{
+    border-bottom: none;
+}
+
+#guest-summary strong{
+    color: var(--primary-blue);
+    font-weight:700;
+}
+
+.display-section {
+    margin-top: 30px;
+    border-top: 2px solid #eee;
+    padding-top: 25px;
+}
+
+#guest-list{
+    list-style-type: none;
+}
+
+#guest-list li{
+    background-color: var(--bg-white);
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius:12px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    font-size: 1.1em;
+    color: var(--text-dark);
+    box-shadow: 0 5px 15px var(--shadow-light);
+    transition: all 0.3s ease;
+    position: relative;
+    border: 1px solid #ddd;
+    animation: slideIn 0.5s ease-out forwards; /*Entry animation*/
+    overflow: hidden;/*Ensure content doesn't spill out */
+}
+
+#guest-list li:hover{
+    transform: translateY(-3px) scale(1.01);/*Lift on hover*/
+    box-shadow: 0 8px 20px var(--shadow-medium);
+}
+
+/*Keyframes for list item animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Styling for Attending status */
+#guest-list li.attending{
+    background-color: #e6ffe6;/*Lighter green */
+    border-color: var(--success-green);
+}
+
+/*Styling for Not Attending status*/
+#guest-list li.not-attending{
+    background-color: #ffebe6;/*Lighter red*/
+    border-color: var(--danger-red);
+    opacity: 0.8; /*Slightly faded */
+    text-decoration: line-through; /*Stikethrough for not attending*/
+    color: var(--text-light);
+    box-shadow: 0 3px 10px rgba(220, 53, 69, 0.15); /*Red tinted shadow*/
+}
+
+.guest-info{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-right: 20px;
+    min-width: 150px; /*Ensure space for name/timestamp */
+}
+
+.guest-name{
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.timestamp{
+    font-size: 0.9em;
+    color: var(--text-light);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+body{
+    
+    background-image: url(./images/Group1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1{
+    margin-left: 40px;
+}
+.body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+.input{
+    width: 40vw;
+    height: 90vh;
+    margin-left: 40px;
+  
+}
+
+.display{
+    width: 50vw;
+    height: 90vh
+}
+
+*/ 

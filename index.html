@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Guest List</h1>
+    <div class="body">
+        <div class="input-section">
+            <label for="guest-name">Guest Name</label>
+            <input type="text" id="name-input" placeholder="Enter guest name">   
+        </div>
+        <div class="form-group">
+            <label for="category-select">Category</label>
+            <select id="category-select">
+                <option value="Friend">Friend</option>
+                <option value="Family">Family</option>
+                <option value="Colleague">Colleague</option>
+            </select>
+            <button class="submit" id="add-guest">Add Guest</button>
+        </div>
+
+        <div class="summary-section">
+            <h2>Guest Summary</h2>
+            <div id="guest-summary">
+                <!-- Summary will be displayed here by Javascript -->
+            </div>
+        </div>
+
+        <div class="display-section">
+            <h3>Guest Details</h3>
+            <ul id="guest-list">
+                <!-- Guests will be added here -->
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="./src/index.js"></script>
+</html>
