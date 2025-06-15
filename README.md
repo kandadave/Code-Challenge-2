@@ -6,10 +6,8 @@ By David Chumo
 **Description**
 This is a minimalist, yet feature-rich, guest list management application. It's designed to demonstrate fundamental web development concepts including DOM manipulation, event handling, and dynamic content updates using vanilla HTML, CSS, and JavaScript. Users can add guests, categorize them, track their attendance status, and manage the list efficiently.
 
-**Screenshot**
 
-
-Features
+**Features**
 Add Guests: Easily add new guest names to the list via an input field.
 
 Guest Categorization: Assign guests to categories (Friend, Family, or Colleague) with distinct color tags for quick identification.
@@ -30,16 +28,16 @@ Interactive UI: Enjoy a clean, modern, and highly interactive user interface wit
 
 Responsive Design: The layout adapts gracefully to different screen sizes, ensuring a great experience on desktop, tablet, and mobile devices.
 
-How to Use
-Requirements
+**How to Use**
+**Requirements**
 A computer, tablet, or phone
 
 Access to the internet
 
 A modern web browser (e.g., Chrome, Firefox, Edge, Safari)
 
-View Live Site
-Visit the deployed application at: [Insert Live Site URL Here]
+**View Live Site**
+Visit the deployed application at: 
 
 The live site allows you to:
 
@@ -55,10 +53,10 @@ Delete guests from the list.
 
 See a real-time summary of your guest counts.
 
-Local Development
+**Local Development**
 If you want to run the project locally, follow these steps:
 
-Requirements
+**Requirements**
 Node.js (for npm commands, although you won't use a development server for this simple app, npm is useful for general dev tooling)
 
 Basic understanding of HTML, CSS, and JavaScript (ES6+)
@@ -101,12 +99,12 @@ CSS3: For styling and creating the appealing, responsive layout, including anima
 
 JavaScript (ES6+): For all interactive functionalities, DOM manipulation, and state management within the browser.
 
-Support and Contact Details
+**Support and Contact Details**
 If you have any questions, suggestions, or need assistance, please contact:
 
-Email: david.chumo@student.moringaschool.com
+**Email**: david.chumo@student.moringaschool.com
 
-License
+**License**
 MIT License Copyright © 2025 David Chumo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
