@@ -37,7 +37,7 @@ Access to the internet
 A modern web browser (e.g., Chrome, Firefox, Edge, Safari)
 
 **View Live Site**
-Visit the deployed application at: 
+Visit the deployed application at: https://kandadave.github.io/Code-Challenge-2/
 
 The live site allows you to:
 
