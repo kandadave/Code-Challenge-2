@@ -272,62 +272,180 @@ button:active::before {
     color: var(--text-light);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-body{
-    
-    background-image: url(./images/Group1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.category-tag {
+    font-size: 0.85em;
+    padding: 6px 12px;
+    border-radius: 20px;/*Pill shape*/
+    color: white;
+    font-weight: 700;
+    margin-left: 15px;
+    text-transform: uppercase;
+    top: 15px;
+    right: 15px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-h1{
-    margin-left: 40px;
+
+/* Category-specific-colors with gradients*/
+.category-tag-Friend{
+    background-image: linear-gradient(45deg, #3498db, #5dade2); /* Blue gradient */
 }
-.body{
+.category-tag-Family {
+    background-image: linear-gradient(45deg, #9b59b6, #af7ac5); /* Purple gradient */
+}
+.category-tag-Colleague {
+    background-image: linear-gradient(45deg, #e67e22, #eb984e); /* Orange gradient */
+}
+
+/* Button group styling for aligning buttons */
+.button-group {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center ;
+    gap: 10px;/* Space between buttons */
+    margin-top: 10px;/*Space from guest info*/
+    flex-wrap: wrap;/*Allow buttons to wrap */
 }
 
-.input{
-    width: 40vw;
-    height: 90vh;
-    margin-left: 40px;
-  
+.rsvp-toggle-btn, .edit-btn, .delete-btn {
+    min-width: 140px;/*Ensure buttons have consistent width */
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 8px;/*Slightly less rounded that main button */
+    box-shadow: 0 3px 8px rgba(0,0,0, 0.1);
+    transition: all 0.2s ease;
 }
 
-.display{
-    width: 50vw;
-    height: 90vh
+.rsvp-toggle-btn {
+    background-color: var(--info-cyan);
+    background-image: linear-gradient(45deg, var(--info-cyan), #4bd0e4);
+    color: white;
 }
 
-*/ 
+.rsvp-toggle-btn:hover {
+    background-image: linear-gradient(45deg, var(--info-cyan-dark), #33b8cb);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(23, 162, 184, 0.3);
+}
+
+.edit-btn {
+    background-color: var(--warning-yellow);
+    background-image: linear-gradient(45deg, var(--warning-yellow), #ffd666);
+    color: var(--text-dark); /* Dark text for better contrast on yellow */
+}
+
+.edit-btn:hover {
+    background-image: linear-gradient(45deg, var(--warning-yellow-dark), #ffc833);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(255, 193, 7, 0.3);
+}
+
+.edit-btn.save-btn {
+    background-color: var(--success-green);
+    background-image: linear-gradient(45deg, var(--success-green), #3acb5a);
+    color: white;
+}
+
+.edit-btn.save-btn:hover {
+    background-image: linear-gradient(45deg, var(--success-green-dark), #2eb44c);
+}
+
+.delete-btn {
+    background-color: var(--danger-red);
+    background-image: linear-gradient(45deg, var(--danger-red), #e64e5c);
+    color: white;
+}
+
+.delete-btn:hover {
+    background-image: linear-gradient(45deg, var(--danger-red-dark), #d93d4c);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(220, 53, 69, 0.3);
+}
+
+.edit-name-input {
+    padding: 10px;
+    border: 2px solid var(--primary-blue);
+    border-radius: 8px;
+    font-size: 1.1em;
+    box-sizing: border-box;
+    width: 100%; /* Adjust width to fit */
+    margin-right: 10px;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.edit-name-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+/*Responsive Adjustments*/
+@media (max-width: 768px) {
+    h1{
+        font-size: 2.2em;
+        margin-bottom: 25px;
+    }
+
+    .body {
+        padding: 25px;
+        border-radius: 10px;
+    }
+
+    button {
+        width: 100%; /*Full width buttons on smaller screens*/
+        align-self: stretch;
+    }
+
+    .rsvp-toggle-btn, .edit-btn, .delete-btn {
+        min-width: unset; /* Remove min-width for flexibility */
+        width: 100%; /* Take full width */
+        margin-left: 0; /* Remove left margin when stacked */
+    }
+
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .body {
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    input[type="text"],
+    select,
+    button {
+        font-size: 1em;
+        padding: 12px;
+    }
+
+    #guest-list li {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .guest-info {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%; /* Take full width */
+    }
+
+    .category-tag {
+        position: static; /* Stack naturally on small screens */
+        margin-top: 10px;
+        margin-left: 0;
+        margin-bottom: 10px;
+        align-self: flex-end; /* Align tag to the right if needed */
+    }
+
+    .button-group {
+        width: 100%;
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 8px; /* Reduce gap between stacked buttons */
+    }
+}

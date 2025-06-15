@@ -34,10 +34,13 @@ function updateGuestSummary(){
 
 
 //Function to add names to the guest list
-function addNameToList(){
+function addNameToList(event){
+event.preventDefault(); //Prevent default form submission behavior
+
     const name = nameInput.value.trim()//Get the input value and remove leading/trailing spaces
     const category = categorySelect.value;//Get the selected category
 
+   
     if(name === "") {//Check if the input is empty
         alert("Please enter a name!")
         return;//Stop the function if no name is entered 
@@ -162,9 +165,10 @@ function addNameToList(){
 addGuest.addEventListener('click', addNameToList);
 
 //Allow adding name by pressing Enter key after typing the guest name
-addGuest.addEventListener('keypress',function(event){
+nameInput.addEventListener('keypress',function(event){
     if(event.key === 'Enter'){
-        addNameToList();
+        event.preventDefault();
+        addNameToList(event);
     }
 });
 
