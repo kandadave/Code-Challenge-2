@@ -1,4 +1,4 @@
-Dynamic Guest List App
+**Dynamic Guest List App**
 A simple, interactive guest list application built with HTML, CSS, and JavaScript.
 
 By David Chumo
@@ -7,7 +7,7 @@ Description
 This is a minimalist, yet feature-rich, guest list management application. It's designed to demonstrate fundamental web development concepts including DOM manipulation, event handling, and dynamic content updates using vanilla HTML, CSS, and JavaScript. Users can add guests, categorize them, track their attendance status, and manage the list efficiently.
 
 Screenshot
-(Include a screenshot of your deployed application here for easy visualization)
+
 
 Features
 Add Guests: Easily add new guest names to the list via an input field.
@@ -107,7 +107,7 @@ If you have any questions, suggestions, or need assistance, please contact:
 Email: david.chumo@student.moringaschool.com
 
 License
-MIT License Copyright © 2024 David Chumo
+MIT License Copyright © 2025 David Chumo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
