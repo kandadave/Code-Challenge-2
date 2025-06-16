@@ -65,7 +65,7 @@ Code editor (VS Code recommended)
 
 Terminal/Command Line
 
-Installation Process
+**Installation Process**
 Clone this repository using:
 
 git clone git@github.com:kandadave/Code-Challenge-2.git
@@ -92,7 +92,9 @@ Run live-server
 
 Open your browser and visit the address provided by live-server (usually http://127.0.0.1:8080 or http://localhost:8080).
 
-Technologies Used
+You can also use the live server extension on vscode to 'Go Live' while on index.html
+
+**Technologies Used**
 HTML5: For structuring the web content.
 
 CSS3: For styling and creating the appealing, responsive layout, including animations.
