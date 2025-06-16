@@ -74,7 +74,7 @@ or by downloading a ZIP file of the code.
 
 Navigate to the project directory:
 
-cd guest-list-app
+cd Code-Challenge-2
 
 Open the index.html file directly in your web browser. For example, if you're in the project directory, you can usually just type:
 
