@@ -1,14 +1,14 @@
 ![Screenshot_20250615_103930](https://github.com/user-attachments/assets/204a09e8-ae51-4c34-bf9a-86b56bc4283f)
-### Dynamic Guest List App
+# Dynamic Guest List App
 A simple, interactive guest list application built with HTML, CSS, and JavaScript.
 
 By David Chumo
 
-**Description**
+## Description
 This is a minimalist, yet feature-rich, guest list management application. It's designed to demonstrate fundamental web development concepts including DOM manipulation, event handling, and dynamic content updates using vanilla HTML, CSS, and JavaScript. Users can add guests, categorize them, track their attendance status, and manage the list efficiently.
 
 
-**Features**
+## Features
 Add Guests: Easily add new guest names to the list via an input field.
 
 Guest Categorization: Assign guests to categories (Friend, Family, or Colleague) with distinct color tags for quick identification.
