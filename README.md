@@ -29,8 +29,8 @@ Interactive UI: Enjoy a clean, modern, and highly interactive user interface wit
 
 Responsive Design: The layout adapts gracefully to different screen sizes, ensuring a great experience on desktop, tablet, and mobile devices.
 
-**How to Use**
-**Requirements**
+## How to Use
+### Requirements
 A computer, tablet, or phone
 
 Access to the internet
