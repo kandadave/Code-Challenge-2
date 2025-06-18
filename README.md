@@ -1,4 +1,5 @@
-![Screenshot_20250615_103930](https://github.com/user-attachments/assets/204a09e8-ae51-4c34-bf9a-86b56bc4283f)**Dynamic Guest List App**
+![Screenshot_20250615_103930](https://github.com/user-attachments/assets/204a09e8-ae51-4c34-bf9a-86b56bc4283f)
+### Dynamic Guest List App
 A simple, interactive guest list application built with HTML, CSS, and JavaScript.
 
 By David Chumo
