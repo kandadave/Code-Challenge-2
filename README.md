@@ -66,7 +66,7 @@ Code editor (VS Code recommended)
 
 Terminal/Command Line
 
-**Installation Process**
+### Installation Process
 Clone this repository using:
 
 git clone git@github.com:kandadave/Code-Challenge-2.git
@@ -95,7 +95,7 @@ Open your browser and visit the address provided by live-server (usually http://
 
 You can also use the live server extension on vscode to 'Go Live' while on index.html
 
-**Technologies Used**
+### Technologies Used
 HTML5: For structuring the web content.
 
 CSS3: For styling and creating the appealing, responsive layout, including animations.
@@ -107,7 +107,7 @@ If you have any questions, suggestions, or need assistance, please contact:
 
 **Email**: david.chumo@student.moringaschool.com
 
-**License**
+### License
 MIT License Copyright © 2025 David Chumo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
